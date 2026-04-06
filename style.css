@@ -17,7 +17,7 @@ body {
 }
 
 h1 {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: 'Syne', sans-serif;
     font-weight: 800;
     font-size: clamp(1.8rem, 5vw, 3rem);
     color: #f0e6ff;
@@ -61,13 +61,12 @@ h1 {
     transform: scale(1.04);
 }
 
-#reset,
-#n-btn {
+#reset {
     padding: 0.65rem 1.4rem;
-    background: whitesmoke;
+    background: transparent;
     border: 1.5px solid rgba(255, 255, 255, 0.25);
     border-radius: 10px;
-    color: #000000;
+    color: #f0e6ff;
     font-family: 'DM Sans', sans-serif;
     font-size: 0.95rem;
     font-weight: 500;
@@ -78,7 +77,7 @@ h1 {
 
 #reset:hover,
 #n-btn:hover {
-    background: rgba(255, 255, 255, 0.589);
+    background: rgba(255, 255, 255, 0.08);
     border-color: rgba(255, 255, 255, 0.4);
 }
 
@@ -99,4 +98,20 @@ h1 {
 
 .hide {
     display: none;
+}
+#n-btn{
+   
+     justify-items: center;
+    align-items: center;
+     padding: 0.65rem 3rem;
+    background: transparent;
+    border: 1.5px solid rgba(255, 255, 255, 0.25);
+    border-radius: 10px;
+    color: #f0e6ff;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.95rem;
+    font-weight: 500;
+    cursor: pointer;
+    margin: 0.6rem;
+    transition: background 0.15s ease, border-color 0.15s ease;
 }
