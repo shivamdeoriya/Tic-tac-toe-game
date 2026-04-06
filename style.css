@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=DM+Sans:wght@400;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #1a0e2e;
+    font-family: 'DM Sans', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    padding: 2rem 1rem;
+}
+
+h1 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 800;
+    font-size: clamp(1.8rem, 5vw, 3rem);
+    color: #f0e6ff;
+    letter-spacing: -0.02em;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.game {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    width: min(300px, 85vw);
+}
+
+.box {
+    aspect-ratio: 1;
+    background: rgba(255, 255, 255, 0.06);
+    border: 1.5px solid rgba(255, 255, 255, 0.15);
+    border-radius: 14px;
+    font-family: 'Syne', sans-serif;
+    font-size: clamp(1.8rem, 8vmin, 3rem);
+    font-weight: 800;
+    color: #c084fc;
+    cursor: pointer;
+    transition: background 0.15s ease, transform 0.1s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box:hover {
+    background: rgba(192, 132, 252, 0.12);
+    transform: scale(1.04);
+}
+
+#reset,
+#n-btn {
+    padding: 0.65rem 1.4rem;
+    background: whitesmoke;
+    border: 1.5px solid rgba(255, 255, 255, 0.25);
+    border-radius: 10px;
+    color: #000000;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.95rem;
+    font-weight: 500;
+    cursor: pointer;
+    margin: 0.4rem;
+    transition: background 0.15s ease, border-color 0.15s ease;
+}
+
+#reset:hover,
+#n-btn:hover {
+    background: rgba(255, 255, 255, 0.589);
+    border-color: rgba(255, 255, 255, 0.4);
+}
+
+#msg {
+    font-family: 'Syne', sans-serif;
+    font-size: clamp(1.2rem, 5vmin, 2rem);
+    font-weight: 700;
+    color: #a78bfa;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.msgcontainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hide {
+    display: none;
+}
